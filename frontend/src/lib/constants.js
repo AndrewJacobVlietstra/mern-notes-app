@@ -1,1 +1,4 @@
-export const API_ENDPOINT = "http://localhost:5000/api";
+const BASE_URL =
+	import.meta.env.MODE === "development" ? "http://localhost:5000/api" : "/api";
+
+export const API_ENDPOINT = BASE_URL;
